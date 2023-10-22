@@ -8,6 +8,8 @@
 
 
 #if canImport(UIKit)
+import UIKit
+
 public class TextFieldIndicator: UITextField {
     private var activityIndicator: UIActivityIndicatorView!
     
@@ -33,7 +35,7 @@ public class TextFieldIndicator: UITextField {
     
     private func commonInit() {
 
-        activityIndicator = UIActivityIndicatorView(style: .medium)
+        activityIndicator = UIActivityIndicatorView(style: .gray)
         activityIndicator.hidesWhenStopped = true
 
         activityIndicator.translatesAutoresizingMaskIntoConstraints = false
